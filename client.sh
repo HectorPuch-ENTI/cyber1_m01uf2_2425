@@ -30,3 +30,12 @@ echo "FILE_NAME lechuga.ogg"  | nc localhost 7777
 echo "8. LISTEN FILE_NAME"
 
 FILES=`nc -l 7777`
+
+echo "10. CHECK FILE_NAME"
+
+if [ "$FILES" != "FILE_NAME" ]
+then
+	echo "ERROR 2: FILE_NAME enviado incorrectamente."
+
+	exit 2 
+fi
