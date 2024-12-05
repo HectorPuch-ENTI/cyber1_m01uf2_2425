@@ -29,7 +29,7 @@ echo "9. CHECK FILE_NAME"
 
 if [ "$FILES" != "FILE_NAME" ]
 then
-	echo "ERROR 2: File name mal formado. $FILES"
+	echo "ERROR 2: FILE_NAME mal formado. $FILES"
 
 	echo "KO_FILE_NAME" | nc localhost 7777
 
