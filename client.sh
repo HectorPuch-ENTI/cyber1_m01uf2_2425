@@ -27,4 +27,6 @@ echo "7. SEND FILE_NAME"
 
 echo "FILE_NAME lechuga.ogg"  | nc localhost 7777
 
+echo "8. LISTEN FILE_NAME"
 
+FILES=`nc -l 7777`
