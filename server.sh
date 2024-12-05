@@ -23,5 +23,15 @@ echo "OK_HEADER" | nc localhost 7777
 
 echo "5. LISTEN FILE_NAME"
 
-DATA=`nc -l 7777`
+FILES=`nc -l 7777 | cut -d' ' -f1`
 
+echo "9. CHECK FILE_NAME"
+
+if [ "$FILES" != "FILE_NAME" ]
+then
+	echo "ERROR 2: File name mal formado. $FILES"
+
+	echo "KO_FILE_NAME" | nc localhost 7777
+
+	exit 2
+fi
