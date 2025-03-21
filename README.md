@@ -84,7 +84,7 @@ Mira que esto es [un enlace](https://enti.cat) a la mejor web del planeta
 
 ## Listas de tareas
 
-[ ] Pollo
-[ ] Papel higiénico
-[x] Agua
-[ ] Lechuga
+- [ ] Pollo
+- [ ] Papel higiénico
+- [x] Agua
+- [ ] Lechuga
